@@ -23,12 +23,18 @@ function rt($array, $title = '', $head = true)
     }
     foreach ($array as $key => $value) {
         if (is_array($value)) {
+//            if ($title != '')
+//                $title = $title.'.'.$key;
             $text .= rt($value , $key, false);
         } else {
+            if (is_bool($value)) {
+//                $value = var_export($value,true);
+                $value = ($value) ? 'true' : 'false';
+            }
             if ($title != '')
-                $text .= $ref . '.'.$title.'.'.$key.'.'.$value.PHP_EOL;
+                $text .= $ref . '.'.$title.'.'.$key.'= '.$value.PHP_EOL;
             else
-                $text .= $ref . '.'.$key.'.'.$value.PHP_EOL;
+                $text .= $ref . '.'.$key.'= '.$value.PHP_EOL;
 
         }
     }
