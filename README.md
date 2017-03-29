@@ -1,7 +1,7 @@
 # varDumpAsText
 Simple and cool tool for echo array as text in command line.
 
-## usage
+## Usage and example output
 
 ```php
 include 'varDumpAsText.php';
@@ -12,6 +12,7 @@ $array = [
 echo rt($array)
 ```
 
+#### var_dump output
 
 ```php
 array(2) {
@@ -60,9 +61,9 @@ array(2) {
 
 ```
 
-out put 
+#### rt() Output 
 
-```php
+```
 [ref]
 ref.update_id.297
 ref.update._.updateNewChannelMessage
@@ -80,5 +81,15 @@ ref.message.date.1490611862
 ref.message.message.hello world!
 ref.update.pts.801
 ref.update.pts_count.1
-
 ```
+
+## Similar projects
+
+- [Kint](http://raveren.github.io/kint/)
+- [dump_r](https://github.com/leeoniya/dump_r.php)
+- [Krumo](http://sourceforge.net/projects/krumo/)
+- [dBug](http://dbug.ospinto.com/)
+- [symfony-vardumper](http://www.sitepoint.com/var_dump-introducing-symfony-vardumper/)
+
+
+## Your welcome to pull request 
