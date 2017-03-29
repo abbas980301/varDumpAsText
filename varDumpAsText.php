@@ -10,11 +10,8 @@
  * @param bool $head
  * @return string
  */
-function rt($array, $title = '', $head = true)
+function rt($array, $title = null, $head = true)
 {
-
-    var_dump($title);
-
     $ref = 'ref';
     $text = '';
     if ($head) {
@@ -23,8 +20,9 @@ function rt($array, $title = '', $head = true)
     }
     foreach ($array as $key => $value) {
         if (is_array($value)) {
-//            if ($title != '')
-//                $title = $title.'.'.$key;
+            if ($title != null) {
+                $key = $title.'.'.$key;
+            }
             $text .= rt($value , $key, false);
         } else {
             if (is_bool($value)) {
