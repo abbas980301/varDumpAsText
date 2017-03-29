@@ -1,7 +1,7 @@
 # varDumpAsText
 Simple and cool tool for echo array as text in command line.
 
-## usage
+## Usage and example output
 
 ```php
 include 'varDumpAsText.php';
@@ -60,7 +60,7 @@ array(2) {
 
 ```
 
-out put 
+### output 
 
 ```php
 [ref]
@@ -80,5 +80,4 @@ ref.message.date.1490611862
 ref.message.message.hello world!
 ref.update.pts.801
 ref.update.pts_count.1
-
 ```
