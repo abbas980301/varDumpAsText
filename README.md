@@ -81,3 +81,14 @@ ref.message.message.hello world!
 ref.update.pts.801
 ref.update.pts_count.1
 ```
+
+## Similar projects
+
+- [Kint](http://raveren.github.io/kint/)
+- [dump_r](https://github.com/leeoniya/dump_r.php)
+- [Krumo](http://sourceforge.net/projects/krumo/)
+- [dBug](http://dbug.ospinto.com/)
+- [symfony-vardumper](http://www.sitepoint.com/var_dump-introducing-symfony-vardumper/)
+
+
+## Your welcome to pull request 
