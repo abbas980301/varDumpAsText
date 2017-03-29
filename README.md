@@ -12,6 +12,7 @@ $array = [
 echo rt($array)
 ```
 
+#### var_dump output
 
 ```php
 array(2) {
@@ -60,9 +61,9 @@ array(2) {
 
 ```
 
-### output 
+#### rt() Output 
 
-```php
+```
 [ref]
 ref.update_id.297
 ref.update._.updateNewChannelMessage
