@@ -1,7 +1,7 @@
 # varDumpAsText
 Simple and cool tool for echo array as text in command line.
 
-## Usage and example output
+## Usage
 
 ```php
 include 'varDumpAsText.php';
@@ -11,6 +11,28 @@ $array = [
 ];
 echo rt($array)
 ```
+
+## Output example
+
+#### rt() Output 
+
+```php
+[ref]
+ref.update_id= 404926057
+ref.message.message_id= 4456
+ref.message.from.id= 000000
+ref.message.from.first_name= عباس
+ref.message.from.last_name= شکیبا
+ref.message.from.username= abbasShakiba
+ref.message.chat.id= 000000
+ref.message.chat.first_name= عباس
+ref.message.chat.last_name= شکیبا
+ref.message.chat.username= abbasShakiba
+ref.message.chat.type= private
+ref.message.date= 1493642471
+ref.message.text= Hello
+```
+
 
 #### var_dump output
 
@@ -52,25 +74,6 @@ array(2) {
     string(5) "Hello"
   }
 }
-```
-
-#### rt() Output 
-
-```
-[ref]
-ref.update_id= 404926057
-ref.message.message_id= 4456
-ref.message.from.id= 000000
-ref.message.from.first_name= عباس
-ref.message.from.last_name= شکیبا
-ref.message.from.username= abbasShakiba
-ref.message.chat.id= 000000
-ref.message.chat.first_name= عباس
-ref.message.chat.last_name= شکیبا
-ref.message.chat.username= abbasShakiba
-ref.message.chat.type= private
-ref.message.date= 1493642471
-ref.message.text= Hello
 ```
 
 ## Similar projects
