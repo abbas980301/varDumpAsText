@@ -1,7 +1,7 @@
 <?php
 /**
- * Telegram Error Logger Class.
- * @author shakibonline
+ * Return array as text in js class format
+ * @author shakibonline <shakiba_9@yahoo.com>
  */
 
 /**
@@ -26,7 +26,6 @@ function rt($array, $title = null, $head = true)
             $text .= rt($value , $key, false);
         } else {
             if (is_bool($value)) {
-//                $value = var_export($value,true);
                 $value = ($value) ? 'true' : 'false';
             }
             if ($title != '')

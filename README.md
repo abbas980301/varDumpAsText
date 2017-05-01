@@ -17,70 +17,60 @@ echo rt($array)
 ```php
 array(2) {
   ["update_id"]=>
-  int(297)
-  ["update"]=>
-  array(4) {
-    ["_"]=>
-    string(23) "updateNewChannelMessage"
-    ["message"]=>
-    array(11) {
-      ["_"]=>
-      string(7) "message"
-      ["out"]=>
-      bool(false)
-      ["mentioned"]=>
-      bool(false)
-      ["media_unread"]=>
-      bool(false)
-      ["silent"]=>
-      bool(false)
-      ["post"]=>
-      bool(false)
+  int(404926057)
+  ["message"]=>
+  array(5) {
+    ["message_id"]=>
+    int(4456)
+    ["from"]=>
+    array(4) {
       ["id"]=>
-      int(652)
-      ["from_id"]=>
-      int(373018943)
-      ["to_id"]=>
-      array(2) {
-        ["_"]=>
-        string(11) "peerChannel"
-        ["channel_id"]=>
-        int(1110285821)
-      }
-      ["date"]=>
-      int(1490611862)
-      ["message"]=>
-      string(39) "hello world!"
+      int(000000)
+      ["first_name"]=>
+      string(8) "عباس"
+      ["last_name"]=>
+      string(10) "شکیبا"
+      ["username"]=>
+      string(12) "abbasShakiba"
     }
-    ["pts"]=>
-    int(801)
-    ["pts_count"]=>
-    int(1)
+    ["chat"]=>
+    array(5) {
+      ["id"]=>
+      int(000000)
+      ["first_name"]=>
+      string(8) "عباس"
+      ["last_name"]=>
+      string(10) "شکیبا"
+      ["username"]=>
+      string(12) "abbasShakiba"
+      ["type"]=>
+      string(7) "private"
+    }
+    ["date"]=>
+    int(1493642471)
+    ["text"]=>
+    string(5) "Hello"
   }
 }
-
 ```
 
 #### rt() Output 
 
 ```
 [ref]
-ref.update_id.297
-ref.update._.updateNewChannelMessage
-ref.message._.message
-ref.message.out.
-ref.message.mentioned.
-ref.message.media_unread.
-ref.message.silent.
-ref.message.post.
-ref.message.id.652
-ref.message.from_id.373018943
-ref.to_id._.peerChannel
-ref.to_id.channel_id.1110285821
-ref.message.date.1490611862
-ref.message.message.hello world!
-ref.update.pts.801
-ref.update.pts_count.1
+ref.update_id= 404926057
+ref.message.message_id= 4456
+ref.message.from.id= 000000
+ref.message.from.first_name= عباس
+ref.message.from.last_name= شکیبا
+ref.message.from.username= abbasShakiba
+ref.message.chat.id= 000000
+ref.message.chat.first_name= عباس
+ref.message.chat.last_name= شکیبا
+ref.message.chat.username= abbasShakiba
+ref.message.chat.type= private
+ref.message.date= 1493642471
+ref.message.text= Hello
 ```
 
 ## Similar projects
@@ -90,6 +80,3 @@ ref.update.pts_count.1
 - [Krumo](http://sourceforge.net/projects/krumo/)
 - [dBug](http://dbug.ospinto.com/)
 - [symfony-vardumper](http://www.sitepoint.com/var_dump-introducing-symfony-vardumper/)
-
-
-## Your welcome to pull request 
