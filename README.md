@@ -78,8 +78,8 @@ array(2) {
 
 ## Similar projects
 
-- [Kint](http://raveren.github.io/kint/)
+- [Kint](https://github.com/kint-php/kint)
 - [dump_r](https://github.com/leeoniya/dump_r.php)
-- [Krumo](http://sourceforge.net/projects/krumo/)
-- [dBug](http://dbug.ospinto.com/)
-- [symfony-vardumper](http://www.sitepoint.com/var_dump-introducing-symfony-vardumper/)
+
+___
+If you like it, start it!
