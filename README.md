@@ -82,4 +82,4 @@ array(2) {
 - [dump_r](https://github.com/leeoniya/dump_r.php)
 
 ___
-If you like it, start it!
+If you like it, start it! :star2:
