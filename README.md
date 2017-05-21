@@ -1,3 +1,5 @@
+[![StyleCI](https://styleci.io/repos/86323865/shield?branch=master)](https://styleci.io/repos/86323865)
+
 # varDumpAsText
 Simple and cool tool for echo array as text in command line.
 
