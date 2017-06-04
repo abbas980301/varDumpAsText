@@ -20,7 +20,7 @@ function rt($array, $title = null, $head = true)
     }
     foreach ($array as $key => $value) {
         if (is_array($value)) {
-            if ($title != null) {
+            if ($title !== null) {
                 $key = $title.'.'.$key;
             }
             $text .= rt($value , $key, false);
