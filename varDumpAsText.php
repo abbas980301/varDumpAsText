@@ -1,13 +1,15 @@
 <?php
 /**
- * Return array as text in js class format
+ * Return array as text in js class format.
+ *
  * @author shakibonline <shakiba_9@yahoo.com>
  */
 
 /**
  * @param $array
  * @param string $title
- * @param bool $head
+ * @param bool   $head
+ *
  * @return string
  */
 function rt($array, $title = null, $head = true)
@@ -23,17 +25,18 @@ function rt($array, $title = null, $head = true)
             if ($title !== null) {
                 $key = $title.'.'.$key;
             }
-            $text .= rt($value , $key, false);
+            $text .= rt($value, $key, false);
         } else {
             if (is_bool($value)) {
                 $value = ($value) ? 'true' : 'false';
             }
-            if ($title != '')
-                $text .= $ref . '.'.$title.'.'.$key.'= '.$value.PHP_EOL;
-            else
-                $text .= $ref . '.'.$key.'= '.$value.PHP_EOL;
-
+            if ($title != '') {
+                $text .= $ref.'.'.$title.'.'.$key.'= '.$value.PHP_EOL;
+            } else {
+                $text .= $ref.'.'.$key.'= '.$value.PHP_EOL;
+            }
         }
     }
+
     return $text;
 }
